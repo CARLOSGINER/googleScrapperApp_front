@@ -1,0 +1,24 @@
+.principal {
+    font-size: 1.1rem;
+    background-color: white;
+    margin-bottom:2em;
+    color: gray;
+    border:1px solid hsla(0, 0%, 50%, 0.486);
+    padding:3px;
+}
+
+
+.borderless {
+    composes:principal;
+    border:none;
+    border-bottom:1px solid gray;
+}
+
+.principal:focus, .principal:active {
+    outline:none;
+}
+
+.principal::placeholder{
+    color: cadetblue;
+}
+

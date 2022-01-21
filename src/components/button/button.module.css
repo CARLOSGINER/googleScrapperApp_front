@@ -1,0 +1,11 @@
+.button{
+    border:none;
+    color:#fff;
+    text-transform: uppercase;
+    cursor:pointer;
+    font-size:0.8rem;
+}
+
+.button:hover{
+    filter:brightness(110%);
+}

@@ -1,0 +1,24 @@
+
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 15em;
+    height: 25em;
+    border:1px solid rgba(128, 128, 128, 0.363);
+    background-color:white ;
+    padding: 2em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    width: 12em;
+    height: 2em;
+}
