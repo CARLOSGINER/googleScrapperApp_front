@@ -8,8 +8,8 @@ export default function App() {
         <>
         <BrowserRouter basename="/googleScrapperApp_front">
             <Routes>
-                <Route  path='/' element={<Home/>}></Route>
-                <Route  path='/login' element={<Login/>}></Route>
+                <Route exact path='/' element={<Home/>}></Route>
+                <Route exact path='/login' element={<Login/>}></Route>
             </Routes>
         </BrowserRouter>
         </>
