@@ -1,0 +1,7 @@
+.general{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 69vw;
+    margin: auto;
+}

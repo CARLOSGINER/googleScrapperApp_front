@@ -1,0 +1,23 @@
+.general{
+    margin-top:3%;
+}
+
+.general th{
+    width:168px;
+    height:58px;
+    background-color:rgba(128, 128, 128, 0.288);
+    font-family:sans-serif;
+    font-weight:300;
+}
+
+.general tbody th{
+    background-color: #fff;
+    height: 2.5em;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width:480px){
+    .general{
+        font-size: 0.75rem;
+    }
+}

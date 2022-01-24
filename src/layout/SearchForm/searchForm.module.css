@@ -1,0 +1,67 @@
+.general{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:2%;
+    width: 69vw;
+    margin:auto;
+    margin-top: 200px;
+}
+
+.buttons button{
+    margin-right:10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    gap:4%;
+}
+
+@media only screen and (max-width:450px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .buttons button{
+        width: 100% !important;
+    }
+
+    .inputs{
+        width: 100%;
+    }
+
+    .inputs input{
+        width: 100% !important;
+    }
+
+    .general{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width:650px){
+    .inputs{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:1120px){
+    .inputs{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+}
