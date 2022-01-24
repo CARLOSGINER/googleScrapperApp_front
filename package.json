@@ -2,7 +2,7 @@
   "name": "geoconta_front",
   "version": "0.1.0",
   "private": true,
-  "Hhomepage":" https://carlosginer.github.io/googleScrapperApp_front/",
+  "Hhomepage":" https://carlosginer.github.io/googleScrapperApp_front",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
