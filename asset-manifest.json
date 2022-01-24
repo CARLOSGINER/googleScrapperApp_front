@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.94fc7025.css",
-    "main.js": "/static/js/main.c93b3e83.js",
-    "index.html": "/index.html",
-    "main.94fc7025.css.map": "/static/css/main.94fc7025.css.map",
-    "main.c93b3e83.js.map": "/static/js/main.c93b3e83.js.map"
+    "main.css": "/googleScrapperApp_front/static/css/main.94fc7025.css",
+    "main.js": "/googleScrapperApp_front/static/js/main.c93b3e83.js",
+    "index.html": "/googleScrapperApp_front/index.html",
+    "main.94fc7025.css.map": "/googleScrapperApp_front/static/css/main.94fc7025.css.map",
+    "main.c93b3e83.js.map": "/googleScrapperApp_front/static/js/main.c93b3e83.js.map"
   },
   "entrypoints": [
     "static/css/main.94fc7025.css",
