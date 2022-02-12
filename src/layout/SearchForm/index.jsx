@@ -24,14 +24,6 @@ function SearchForm() {
           width={'281px'}
           height={'33px'}
         />
-        <Input
-          nameID="test"
-          placeholder={'Ex. Brooklin, Nueva York'}
-          fontSize={'0.8rem'}
-          width={'281px'}
-          height={'33px'}
-        />
-
       </div>
       <div className={buttons}>
         <Button

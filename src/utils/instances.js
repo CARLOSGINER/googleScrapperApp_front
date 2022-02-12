@@ -6,14 +6,16 @@
 
     //to register a new instance of this component created, in the global variable
     // useEffect(()=>{
-    //     addNewInstance(<componentInstances>,nameID)
+    //     addNewInstance(<"component"Instances>,nameID)
 
     //     return ()=>{
-    //         removeInstance(<componentInstances>,nameID)
+    //         removeInstance(<"component"Instances>,nameID)
     //         <setComponentContextStructureHere>({})
     //     }
     // },[nameID,setInputValues])
     
+
+
 //Here create many arrays as reusables components, to keep track of each instances
 export let inputInstances = [];
 
@@ -26,7 +28,7 @@ export function addNewInstance(instanceArray,newInstanceID) {
         return
     }else{
         throw new Error (`⚠ Repeated nameID : ${newInstanceID}, not allowed, please check not to repeat the nameID of the 
-        components or you can create unexpected behavior`)
+        components`)
     }
 }
 
