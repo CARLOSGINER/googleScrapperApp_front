@@ -1,68 +1,40 @@
+//modules imports
 import style from './input.module.css';
-import {useEffect, useReducer,useContext} from 'react';
-import {inputsReducer} from './inputsReducer';
-
+import {useEffect,useContext} from 'react';
+import PropTypes from 'prop-types';
+//utilities imports
 import {InputTextContext} from '../../context/inputTextContext';
-
+import {addNewInstance,removeInstance,inputInstances} from '../../utils/instances';
 
 const {principal,borderless} = style
 
+
 function Input({nameID,placeholder,noBorder,fontSize,width,height}) {
 
+    const {setInputValues,inputValues} = useContext(InputTextContext);
 
-    const {setText1,setText2,text1,text2} = useContext(InputTextContext);
+    // to register a new instance of this component created, in the global array variable assigned
+    useEffect(()=>{
+        addNewInstance(inputInstances,nameID)
 
-    const [stateInputs,dispatch] = useReducer(inputsReducer,{
-        input1:{
-            text:""
-        },
-        input2:{
-            text:""
-        },
-        [nameID]:{
-            text:""
+        return ()=>{
+            removeInstance(inputInstances,nameID)
+            setInputValues({})
         }
-    })
+    },[nameID,setInputValues])
+    
 
     const handleChange = (e) =>{
-        dispatch({
-            type:nameID,
-            payload:{
-                text:e.target.value
-            }
+        setInputValues(prev=>({
+            ...prev,
+            [nameID]:e.target.value
         })
+        )
     }
-
-    useEffect(()=>{
-        if(nameID==='input1'){
-            setText1(stateInputs[nameID].text)
-        }
-        if(nameID==='input2'){
-            setText2(stateInputs[nameID].text)
-        }
-    },[stateInputs,setText1,setText2,nameID])
-
-    useEffect(()=>{
-        if(text1===""){
-            dispatch({
-                type:"input1",
-                payload:{
-                    text:""
-                }
-            })
-        }
-        if(text2===""){
-            dispatch({
-                type:"input2",
-                payload:{
-                    text:""
-                }
-            })
-        }
-    },[text1,text2])
 
     return (
         <>
+        {console.log(inputValues)}
         <input 
             style={{
                 fontSize,
@@ -71,11 +43,15 @@ function Input({nameID,placeholder,noBorder,fontSize,width,height}) {
             }}  
             className={noBorder?borderless:principal} 
             placeholder={placeholder}
-            value={stateInputs[nameID].text}
+            value={inputValues[nameID] || ""}
             onChange={handleChange}
         />
         </>
     )
+}
+
+Input.propTypes ={
+    nameID: PropTypes.string.isRequired
 }
 
 export default Input

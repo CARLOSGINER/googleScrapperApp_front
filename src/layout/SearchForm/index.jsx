@@ -11,19 +11,27 @@ function SearchForm() {
     <form className={general}>
       <div className={inputs}>
         <Input
-          nameID={"input1"}
+          nameID="place"
           placeholder={'Ex. Restaurant, hotel, hospital'}
           fontSize={'0.8rem'}
           width={'281px'}
           height={'33px'}
         />
         <Input
-          nameID={"input2"}
+          nameID="city"
           placeholder={'Ex. Brooklin, Nueva York'}
           fontSize={'0.8rem'}
           width={'281px'}
           height={'33px'}
         />
+        <Input
+          nameID="test"
+          placeholder={'Ex. Brooklin, Nueva York'}
+          fontSize={'0.8rem'}
+          width={'281px'}
+          height={'33px'}
+        />
+
       </div>
       <div className={buttons}>
         <Button

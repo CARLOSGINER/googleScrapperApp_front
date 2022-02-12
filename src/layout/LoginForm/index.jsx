@@ -9,8 +9,8 @@ export default function LoginForm() {
     return (
         <form className={form}>
             <Avatar/>
-            <Input type={'text'} placeholder={'User name'} noBorder={true}/>
-            <Input type={'password'} placeholder={'Password'} noBorder={true}/>
+            <Input nameID='username' type={'text'} placeholder={'User name'} noBorder={true}/>
+            <Input nameID='password' type={'password'} placeholder={'Password'} noBorder={true}/>
             <div className={buttons}>
                 <Button  name="Login" color={'yellowgreen'} width={'8em'} height={'2em'}/>
                 <Button  name="Sign Up" color={'cadetblue'} width={'8em'} height={'2em'}/>
