@@ -16,18 +16,18 @@ function Button({
     const {setText1,setText2} = useContext(InputTextContext); 
     // TODO:  Add text1 and tex2 , for pass item to getDataPay() 
 
-    const handleClick = async (e) => {
-      e.preventDefault()
-      if(name==="start"){
-        const updatedData =  await getDataPay()
-        setData(updatedData)
-      }
-      if(name==="Clear"){
-        setData([])
-        setText1("")
-        setText2("")
-      }
-    }
+    // const handleClick = async (e) => {
+    //   e.preventDefault()
+    //   if(name==="start"){
+    //     const updatedData =  await getDataPay()
+    //     setData(updatedData)
+    //   }
+    //   if(name==="Clear"){
+    //     setData([])
+    //     setText1("")
+    //     setText2("")
+    //   }
+    // }
 
     return (
         <>
